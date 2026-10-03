@@ -1,13 +1,18 @@
+import java.util.Scanner;
+
 public class SolarSystem {
     public static void main(String[] args) {
-        int panelId = 101;
-        double energyGenerated = 45.8;
-        int numberOfPanels = 12;   
-        char systemStatus = 'A';
+        Scanner scanner = new Scanner(System.in);
+        
+        int panelId = scanner.nextInt();
+        double energyGenerated = scanner.nextDouble();
+        int numberOfPanels = scanner.nextInt();
+        char systemStatus = scanner.next().charAt(0);
 
         System.out.println("Panel ID: " + panelId);
         System.out.println("Energy Generated: " + energyGenerated + " kWh");
         System.out.println("Number of Solar Panels: " + numberOfPanels);
         System.out.println("System Status: " + systemStatus);
+    
     }
 }
